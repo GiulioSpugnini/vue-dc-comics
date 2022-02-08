@@ -26,6 +26,9 @@ export default {
   margin: 0 auto;
   padding: 0;
 }
+img{
+  max-width: 100%;
+}
 body{
   background-color: black;
 }

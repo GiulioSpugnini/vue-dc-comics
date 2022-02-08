@@ -34,24 +34,26 @@ data(){
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 50px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     background-color: #fff;
+        ul{
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-top: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: #fff;
+            li{
+             list-style: none;
+             text-decoration: none;
+             padding: 10px;
+             font-weight: bolder;
+            }
+        }
+    
     }
-    ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    li{
-        list-style: none;
-        text-decoration: none;
-        padding: 10px;
-        font-weight: bolder;
-    }
+    
 </style>
