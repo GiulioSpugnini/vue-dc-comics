@@ -53,13 +53,12 @@ export default {
   background-color: black;
   padding: 50px 0 50px 0;
   h2 {
-    margin-left: 100px;
     color: white;
   }
 }
 #figures {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 div {

@@ -45,7 +45,6 @@ nav {
   text-align: center;
 }
 section {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

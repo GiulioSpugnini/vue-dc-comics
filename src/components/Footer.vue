@@ -26,15 +26,17 @@
       <section id="dc-img"></section>
     </section>
     <section id="socials">
-      <button>SIGN-UP NOW!</button>
-      <span>
-        <p>FOLLOW US</p>
-        <img src="../assets/footer-facebook.png" alt="" />
-        <img src="../assets/footer-twitter.png" alt="" />
-        <img src="../assets/footer-youtube.png" alt="" />
-        <img src="../assets/footer-pinterest.png" alt="" />
-        <img src="../assets/footer-periscope.png" alt="" />
-      </span>
+      <footer class="container">
+        <button>SIGN-UP NOW!</button>
+        <span>
+          <p>FOLLOW US</p>
+          <img src="../assets/footer-facebook.png" alt="" />
+          <img src="../assets/footer-twitter.png" alt="" />
+          <img src="../assets/footer-youtube.png" alt="" />
+          <img src="../assets/footer-pinterest.png" alt="" />
+          <img src="../assets/footer-periscope.png" alt="" />
+        </span>
+      </footer>
     </section>
   </div>
 </template>
@@ -86,6 +88,7 @@ div {
 }
 .container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 #links {
@@ -121,20 +124,22 @@ li {
   padding: 10px 0 10px 0;
   display: inline;
 }
-#socials {
-  padding: 30px 0 30px 0;
+footer {
   display: flex;
   justify-content: space-between;
-  background-color: #303030;
-  flex-basis: 100%;
-  height: 100px;
-  button {
+  #socials {
+    padding: 30px 0 30px 0;
     background-color: #303030;
-    border: 2px solid #0282f9;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    line-height: 5px;
+    flex-basis: 100%;
+    height: 100px;
+    button {
+      background-color: #303030;
+      border: 2px solid #0282f9;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      line-height: 5px;
+    }
   }
 }
 
