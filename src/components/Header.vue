@@ -36,13 +36,14 @@ data(){
 
 <style scoped lang="scss">
     div{
+     margin-top: 50px;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-top: 50px;
      padding-top: 20px;
      padding-bottom: 20px;
      background-color: #fff;
+     height: 100px;
         ul{
         display: flex;
         justify-content: space-between;
@@ -52,7 +53,7 @@ data(){
              padding: 10px;
              font-weight: bolder;
             }
-        }
+         }
     
     }
     

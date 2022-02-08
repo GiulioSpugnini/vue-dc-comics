@@ -1,50 +1,30 @@
 <template>
   <div>
-    <div class="container">
+    <section class="container">
       <section id="links">
         <ul>
-          <li class="list-item">
-            <h3>DC COMICS</h3>
-            <ul>
-              <li v-for="link in DcComics" :key="link.text">{{ link.text }}</li>
-            </ul>
+          <li class="list-item">DC COMICS</li>
+          <li v-for="link in DcComics" :key="link.text">{{ link.text }}</li>
+          <li class="list-item">SHOP</li>
+          <li v-for="link in Shop" :key="link.text">
+            {{ link.text }}
           </li>
         </ul>
         <ul>
-          <li class="list-item">
-            <h3>DC</h3>
-            <ul>
-              <li v-for="link in Dc" :key="link.text">
-                {{ link.text }}
-              </li>
-            </ul>
+          <li class="list-item">DC</li>
+          <li v-for="link in Dc" :key="link.text">
+            {{ link.text }}
           </li>
         </ul>
         <ul>
-          <li class="list-item">
-            <h3>SITES</h3>
-            <ul>
-              <li v-for="link in Sites" :key="link.text">
-                {{ link.text }}
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li class="list-item">
-            <h3>SHOP</h3>
-            <ul>
-              <li v-for="link in Shop" :key="link.text">
-                {{ link.text }}
-              </li>
-            </ul>
+          <li class="list-item">SITES</li>
+          <li v-for="link in Sites" :key="link.text">
+            {{ link.text }}
           </li>
         </ul>
       </section>
-      <section id="dc-img">
-        <!-- <img src="../assets/dc-logo-bg.png" alt=""> -->
-      </section>
-    </div>
+      <section id="dc-img"></section>
+    </section>
     <section id="socials">
       <button>SIGN-UP NOW!</button>
       <span>
@@ -103,26 +83,28 @@ div {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
 }
 .container {
-  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #links {
+  padding: 10px 0 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 50%;
+  ul {
+    width: calc(100% / 3);
+  }
+  h3 {
+    color: white;
+  }
 }
-#links ul {
-  width: calc(100% / 3);
-}
-h3 {
+
+.list-item {
   color: white;
-}
-.list-item{
-    text-align: left;
+  font-size: 20px;
+  padding: 10px 0 10px 0;
 }
 li {
   list-style: none;
@@ -131,23 +113,40 @@ li {
 }
 #dc-img {
   background-image: url("../assets/dc-logo-bg.png");
+  background-position: center;
   display: flex;
   min-width: 562px;
 }
+#shop {
+  padding: 10px 0 10px 0;
+  display: inline;
+}
 #socials {
-    padding: 10px 0 10px 0;
-    display: flex;
-    justify-content: space-between;
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
   background-color: #303030;
   flex-basis: 100%;
-}
-button {
+  height: 50px;
+  button {
     background-color: #303030;
     border: 2px solid #0282f9;
-  padding: 5px 10px 5px 10px;
-  color: white;
+    padding: 5px 10px 5px 10px;
+    color: white;
+  }
 }
-p {
-  color: #0282f9;
+
+span {
+  display: flex;
+  align-items: center;
+  p {
+    color: #0282f9;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  img {
+    padding-right: 10px;
+  }
 }
 </style>
