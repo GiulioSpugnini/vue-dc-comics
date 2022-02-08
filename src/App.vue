@@ -31,6 +31,9 @@ export default {
   margin: 0 auto;
   padding: 0;
 }
+.container{
+  max-width: 1400px;
+}
 img{
   max-width: 100%;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-      <section>
-
+      <section id="content">
+          <h2 class="container">Content goes here</h2>
       </section>
       <section id="figures">
           <figure v-for='card in cards' :key='card.text'>
@@ -29,9 +29,17 @@ data(){
 </script>
 
 <style scoped lang="scss">
-section{
+#content{
+    background-color: black;
+    padding: 50px 0 50px 0;
+    h2{
+        color: white;
+        
+    }
+}
+#figures{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-evenly;
      align-items: center;
      max-width: 1400px;
      
@@ -41,8 +49,8 @@ div{
     background-color: #0282f9;
 }
  figure{
+     margin: 0;
      display: flex;
-     justify-content: space-between;
      align-items: center;
      align-items: center;
      color: white;
