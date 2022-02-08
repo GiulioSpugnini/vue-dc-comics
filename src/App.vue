@@ -3,15 +3,20 @@
   <header>
     <Header/>
   </header>
+  <main>
+    <Main/>
+  </main>
 </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Main from './components/Main.vue';
 export default {
   name: 'App',
   components: {
     Header,
+    Main,
   }
 }
 </script>
@@ -19,7 +24,9 @@ export default {
 <style lang="scss">
 *{
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0;
+}
+body{
+  background-color: black;
 }
 </style>
