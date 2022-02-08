@@ -127,12 +127,14 @@ li {
   justify-content: space-between;
   background-color: #303030;
   flex-basis: 100%;
-  height: 50px;
+  height: 100px;
   button {
     background-color: #303030;
     border: 2px solid #0282f9;
-    padding: 5px 10px 5px 10px;
+    padding: 20px;
     color: white;
+    text-align: center;
+    line-height: 5px;
   }
 }
 
