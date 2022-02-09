@@ -5,7 +5,7 @@
         <span id="current">CURRENT SERIES</span>
         <MainHeader />
         <section class="container">
-          <MainBody />
+          <MainBody :products='products'/>
         </section>
       </div>
       <MainFooter />
@@ -24,10 +24,7 @@ export default {
     MainBody,
     MainFooter,
   },
-
-  data() {
-    return {};
-  },
+  props: ["products"],
 };
 </script>
 
