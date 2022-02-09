@@ -1,6 +1,9 @@
 <template>
   <div>
     <div id="content">
+      <section id="jumbo">
+
+      </section>
       <section class="container">
         <h2>Content goes here</h2>
       </section>
@@ -55,6 +58,12 @@ export default {
   h2 {
     color: white;
   }
+}
+#jumbo{
+  min-height: 200px;
+  background-image: url(../assets/jumbotron.jpg);
+  background-size: cover;
+  background-position: top;
 }
 #figures {
   display: flex;
