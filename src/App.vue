@@ -40,6 +40,9 @@ img{
   max-width: 100%;
 }
 body{
+  font-family: 'Lato', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@100&family=Open+Sans:wght@400;600;800&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
   background-color: black;
+
 }
 </style>
